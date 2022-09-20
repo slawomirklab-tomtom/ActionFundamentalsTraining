@@ -7,6 +7,12 @@ on:
 #  pull_request:
 #    branches: ["main"]    
   workflow_dispatch:
+    inputs:
+      environment:
+        type: environment
+        required: true
+        description: 'Environment to deploy to'
+        
 #  schedule:
 #    - cron: '15 6 * * 0'
 
